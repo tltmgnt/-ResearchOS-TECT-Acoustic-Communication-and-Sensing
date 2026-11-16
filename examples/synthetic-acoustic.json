@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "synthetic-acoustics-001",
+  "title": "Synthetic acoustic link and single-echo study",
+  "owner": "example-only",
+  "hypothesis": "Under fixed-noise geometric-loss assumptions, increasing distance lowers Eb/N0 and raises ideal BPSK error probability.",
+  "protocol_reference": "docs/MODEL.md; synthetic software fixture only",
+  "differentiation": "No novel acoustic method is claimed. This example demonstrates reproducibility and evidence organization; a literature and program overlap review is still required.",
+  "data_kind": "synthetic",
+  "seed": 42,
+  "link": {"reference_distance_m": 1, "reference_ebn0_db": 18, "distances_m": [1, 2, 4, 8], "absorption_db_km": 0, "sound_speed_m_s": 343, "bit_rate_bps": 1000, "bits": 4096, "assumption_reference": "Illustrative constant-speed medium and ideal coherent baseband AWGN; not a calibrated acoustic channel"},
+  "ranging": {"sample_rate_hz": 48000, "pulse_samples": 64, "max_delay_samples": 256, "injected_delay_samples": 96, "echo_gain": 1, "noise_std": 0.1, "assumption_reference": "Synthetic known bipolar pulse, one positive echo and independent Gaussian noise; no detector threshold"},
+  "measurements": [],
+  "evidence": []
+}
